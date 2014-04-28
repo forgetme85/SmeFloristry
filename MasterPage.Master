@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="SME_FLoristry2.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+   
+    <style type="text/css">
+        .style1
+        {            text-align: center;
+        }
+        .style2
+        {
+            width: 143px;
+        }
+        .style3
+        {
+            width: 834px;
+        }
+        .style4
+        {
+            height: 25px;
+        }
+        .style5
+        {
+            font-size: x-large;
+            color: #003300;
+            font-weight: bold;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+   
+  </head>
+    <body>
+    <form id="form1" runat="server">
+
+
+        <table border="1" 
+            style="width: 1346px; position:absolute; top: 15px; left: 10px; height: 470px;">
+
+                <tr >
+                   <td class="style1" colspan="2">
+                       &nbsp;<img alt="" src="Image/SME.bmp" style="width: 813px; height: 200px" /></td>
+               </tr>
+                <tr>
+                   <td class="style2" >
+                   
+                       <asp:TreeView ID="TreeView1" runat="server" ExpandDepth="2">
+                       </asp:TreeView>
+                            </td>
+               <td class="style3" >
+               
+                          <asp:ContentPlaceHolder id="head" runat="server">
+
+
+                              <p class="style5">
+                                  Welcome to Ordering &amp; Inventory System</p>
+
+
+                </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+         
+            <tr>
+           <td class="style4" colspan="2" >
+           
+               Malaysia SME Floristry</td>
+               </tr>
+                      
+            
+            </table>
+        
+
+    </form>
+</body>
+</html>
